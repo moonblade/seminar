@@ -24,15 +24,94 @@
 \end{frame}
 
 \section{Introduction}
-\begin{frame}{test}
+\begin{frame}{What is elastic search}
+	\begin{itemize}
+		\item Built on top of Apache Lucene
+		\item Uses RESTful APIs
+		\item Users - Facebook, Github, Wikimedia
+		\item Ranked first in Search engine Databases
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{test}
+\begin{frame}{History}
+	\begin{itemize}
+		\item Shay Banon
+		\item Compass, library for Java
+		\item Not Scalable
+		\item Rebuilt in distributed approach using RESTful API
+	\end{itemize}
 \end{frame}
 
-\section{Key Features}
-\begin{frame}{test}
+% \begin{frame}{Alternatives}
+% % solr
+% % sphinx
+% % no full text search
+% \end{frame}
+
+\section{Features}
+
+\begin{frame}{Document Oriented}
+	\begin{itemize}
+		\item JSON object
+		\item Index
+		\item Type - mapping
+		\item Id
+		\item All elements are optional
+		\item Auto detection of field types
+	\end{itemize}
 \end{frame}
+
+\begin{frame}{Sharding}
+	\begin{itemize}
+		\item Distributed document store
+		\item Complete Lucene search engine
+		\item Hash functions for shard routing
+		\item Immutability by segments
+		\item Near real timing by In-memory Buffer
+		\item Crash recovery with Translog
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sharding}
+	\begin{figure}
+		\centering\includegraphics[width=10cm]{inside_shard}
+		\caption{Inside a shard}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Clustering}
+	\begin{itemize}
+		\item Node
+		\item Primary and Replica shards
+		\item Failure recovery
+		\item Horizontal scaling
+		\item Cluster master
+		\item Completely autonomous
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Clustering}
+	\begin{figure}
+		\centering\includegraphics[width=10cm]{cluster}
+		\caption{A sample cluster}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Clustering}
+	\begin{figure}
+		\centering\includegraphics[width=10cm]{cluster_data}
+		\caption{Request routing in a cluster}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Concurrency}
+	\begin{itemize}
+		\item Optimistic concurrency control
+		\item Operations are asynchronous and concurrent
+		\item Metafield version
+	\end{itemize}
+\end{frame}
+
 
 \section{Search}
 \begin{frame}{test}

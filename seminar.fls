@@ -394,6 +394,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT inside_shard.png
+INPUT ./inside_shard.png
+INPUT ./inside_shard.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT cluster.png
+INPUT ./cluster.png
+INPUT ./cluster.png
+INPUT cluster_data.png
+INPUT ./cluster_data.png
+INPUT ./cluster_data.png
 INPUT seminar.bbl
 INPUT seminar.bbl
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
@@ -409,3 +419,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
