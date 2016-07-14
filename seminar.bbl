@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{book}
+C.~Gormley and Z.~Tong.
+\newblock {\em Elasticsearch: The Definitive Guide}.
+\newblock O'Reilly Media.
+
+\bibitem{ijsr}
+P.~Gupta and S.~Nair.
+\newblock Survey paper on elastic search.
+\newblock {\em International Journal of Science and Research (IJSR)}, January
+  2016.
+
+\bibitem{site}
+https://www.elastic.co/products/elasticsearch.
+\newblock Elasticsearch: Search and analyze data in real time.
+
+\bibitem{mine}
+O.~Kononenko, O.~Baysal, R.~Holmes, and M.~Godfrey.
+\newblock Mining modern repositories with elasticsearch.
+\newblock {\em University of Waterloo, Waterloo, ON, Canada}, 2014.
+
+\end{thebibliography}
