@@ -27,16 +27,16 @@
 \begin{frame}{What is elastic search}
 	\begin{itemize}
 		\item Built on top of Apache Lucene
-		\item Uses RESTful APIs
-		\item Users - Facebook, Github, Wikimedia
+		\item Built in java, Uses RESTful APIs
+		\item Users - Facebook, Github, Wikipedia
 		\item Ranked first in Search engine Databases
+		\item Full text search
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{History}
 	\begin{itemize}
-		\item Shay Banon
-		\item Compass, library for Java
+		\item Shay Banon created Compass library in Java
 		\item Not Scalable
 		\item Rebuilt in distributed approach using RESTful API
 	\end{itemize}
@@ -52,12 +52,11 @@
 
 \begin{frame}{Document Oriented}
 	\begin{itemize}
-		\item JSON object
+		\item Documents as JSON object
 		\item Index
 		\item Type - mapping
 		\item Id
-		\item All elements are optional
-		\item Auto detection of field types
+		\item Dynamic mapping
 	\end{itemize}
 \end{frame}
 
@@ -81,7 +80,7 @@
 
 \begin{frame}{Clustering}
 	\begin{itemize}
-		\item Node
+		\item Node - instance of ES server
 		\item Primary and Replica shards
 		\item Failure recovery
 		\item Horizontal scaling
@@ -104,6 +103,23 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Mapping and analysis}
+	\begin{itemize}
+		\item Inverted index
+		\item Dynamic mapping
+		\item Analyzers
+		\item Character filter, tokenizer and token filter
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Aggregations}
+	\begin{itemize}
+		\item Buckets
+		\item Metrics
+		\item Usable with filters and queries
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Concurrency}
 	\begin{itemize}
 		\item Optimistic concurrency control
@@ -114,11 +130,71 @@
 
 
 \section{Search}
-\begin{frame}{test}
+
+\begin{frame}{Distributed search}
+	\begin{itemize}
+		\item Query phase
+		\item Fetch phase
+	\end{itemize}
 \end{frame}
 
+\begin{frame}{Distributed search}
+	\begin{figure}
+		\centering\includegraphics[width=10cm]{query_phase}
+		\caption{Query phase in distributed search}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Distributed search}
+	\begin{figure}
+		\centering\includegraphics[width=10cm]{fetch_phase}
+		\caption{Fetch phase in distributed search}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Relevance}
+	\begin{itemize}
+		\item Score Calculation
+		\item Term Frequency
+		\item Inverted Document frequency
+		\item Field length norm
+		\item Boost
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Structured search}
+	\begin{itemize}
+		\item Search Lite
+		\item Query DSL
+		\item Query and Filter
+		\item Combinations
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Full text search}
+	\begin{itemize}
+		\item Difficulties with normal DB model
+		\item Multi word search
+		\item Multi field search
+		\item Metafield all
+		\item Phrase search
+		\item Search as you type, n-grams
+		\item Fuzzy search
+	\end{itemize}
+\end{frame}
+
+
 \section{Conclusion}
-\begin{frame}{test}
+\begin{frame}{Use and Perfomance}
+	\begin{itemize}
+		\item Real time and full text search
+		\item Logging massive data - The Guardian
+		\item Geolocation with full text - Stack overflow
+		\item Sheer scale - Github
+		\item Personally, less than 80ms query latency
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]

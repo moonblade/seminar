@@ -404,6 +404,12 @@ INPUT ./cluster.png
 INPUT cluster_data.png
 INPUT ./cluster_data.png
 INPUT ./cluster_data.png
+INPUT query_phase.png
+INPUT ./query_phase.png
+INPUT ./query_phase.png
+INPUT fetch_phase.png
+INPUT ./fetch_phase.png
+INPUT ./fetch_phase.png
 INPUT seminar.bbl
 INPUT seminar.bbl
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
