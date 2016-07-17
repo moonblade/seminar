@@ -1,4 +1,4 @@
-PWD /home/moonblade/workspace/seminar
+PWD /home/moonblade/workspace/seminar/ppt
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT seminar.tex
@@ -410,6 +410,12 @@ INPUT ./query_phase.png
 INPUT fetch_phase.png
 INPUT ./fetch_phase.png
 INPUT ./fetch_phase.png
+INPUT clients.png
+INPUT ./clients.png
+INPUT ./clients.png
+INPUT clients_memory.png
+INPUT ./clients_memory.png
+INPUT ./clients_memory.png
 INPUT seminar.bbl
 INPUT seminar.bbl
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
