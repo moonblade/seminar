@@ -1,5 +1,21 @@
 \begin{thebibliography}{1}
 
+\bibitem{lucenesite}
+Apache lucene core.
+\newblock https://lucene.apache.org/core/.
+
+\bibitem{benchmark}
+Benchmark of some php clients for elasticsearch.
+\newblock https://github.com/jolicode/elasticsearch-php-benchmark.
+
+\bibitem{memorybenchmark}
+Elasticsearch php clients test drive.
+\newblock https://jolicode.com/blog/elasticsearch-php-clients-test-drive.
+
+\bibitem{site}
+Elasticsearch: Search and analyze data in real time.
+\newblock https://www.elastic.co/products/elasticsearch.
+
 \bibitem{book}
 C.~Gormley and Z.~Tong.
 \newblock {\em Elasticsearch: The Definitive Guide}.
@@ -10,10 +26,6 @@ P.~Gupta and S.~Nair.
 \newblock Survey paper on elastic search.
 \newblock {\em International Journal of Science and Research (IJSR)}, January
   2016.
-
-\bibitem{site}
-https://www.elastic.co/products/elasticsearch.
-\newblock Elasticsearch: Search and analyze data in real time.
 
 \bibitem{mine}
 O.~Kononenko, O.~Baysal, R.~Holmes, and M.~Godfrey.

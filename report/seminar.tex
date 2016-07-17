@@ -4,144 +4,109 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
-
+\usepackage{cite}
+\usepackage{acro}
+\include{helpers/acronyms}
 \begin{document}
 
+	\begin{titlepage}
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		\center % Center everything on the page
+		 
+		%	HEADING SECTIONS
 
-\begin{titlepage}
+		\textsc{\LARGE College of Engineering, Trivandrum}\\[1.5cm] % Name of your university/college
+		\textsc{\Large Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
+		% \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+		\includegraphics[width=5cm]{images/cet_emblem.jpg} 
 
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		%	TITLE SECTION
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Elastic Search}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
 
-\center % Center everything on the page
- 
-%----------------------------------------------------------------------------------------
-%	HEADING SECTIONS
-%----------------------------------------------------------------------------------------
+		%	AUTHOR SECTION
+		\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+		\emph{Submitted By:}\\
+		Mohammed Nisham K % Your name
+		mnishamk1995@gmail.com
+		Roll No 39
+		\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+		\begin{flushright} \large
+		\emph{Guide:} \\
+		Vipin Vasu % Supervisor's Name
+		\end{flushright}
+		\end{minipage}\\[2cm]
 
-\textsc{\LARGE College of Engineering, Trivandrum}\\[1.5cm] % Name of your university/college
-\textsc{\Large Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
-% \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+		%	DATE SECTION
+		{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
 
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
+		%	LOGO SECTION
+		\vfill % Fill the rest of the page with whitespace
+	\end{titlepage}
 
-\HRule \\[0.4cm]
-{ \huge \bfseries Elastic Search}\\[0.4cm] % Title of your document
-\HRule \\[1.5cm]
- 
-%----------------------------------------------------------------------------------------
-%	AUTHOR SECTION
-%----------------------------------------------------------------------------------------
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+	\listoffigures
+	\newpage
+	\printacronyms[include-classes=abbrev,name=Abbreviations]
+	\newpage
 
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Submitted By:}\\
-Mohammed Nisham K % Your name
-mnishamk1995@gmail.com
-Roll No 39
-\end{flushleft}
-\end{minipage}
-~
-\begin{minipage}{0.4\textwidth}
-\begin{flushright} \large
-\emph{Guide:} \\
-Vipin Vasu % Supervisor's Name
-\end{flushright}
-\end{minipage}\\[2cm]
+	\pagenumbering{arabic}
 
-% If you don't want a supervisor, uncomment the two lines below and remove the section above
-%\Large \emph{Author:}\\
-%John \textsc{Smith}\\[3cm] % Your name
+	\renewcommand{\abstractname}{\Large Abstract}
+	\input{../common/abstract}
+	\newpage
 
-%----------------------------------------------------------------------------------------
-%	DATE SECTION
-%----------------------------------------------------------------------------------------
+	\section{Introduction}
+		Conventional relational databases fail to work for bigdata applications. No\ac{sql} addresses this problem. But again it fails to incorporate full text search on the saved database. Another issue is real-timing, conventional database techniques do not ensure a real time implementation, so a search engine database implementation is required which addresses these issues.\cite{mine}
 
-{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+		Elastic Search is an open-source realtime distributed search and analytics engine built as an abstraction layer on top of Apache Lucene \textsuperscript{\ac{tm}}. Lucene is an advanced full text search engine with high performance. But since Lucene is written as a library, it is available only when working with Java and it is very complex to use.\cite{book} 
 
-%----------------------------------------------------------------------------------------
-%	LOGO SECTION
-%----------------------------------------------------------------------------------------
+		Elastic provides an abstraction layer implemented in Java, which uses Lucene internally for its operations, but provides a simple method to access them via \ac{rest}ful \ac{api}'s. Since access to operations is via \ac{rest}ful \ac{api}'s, the usage of Elastic Search does not require coding in java, \emph{ie} it can be used from any language.
 
-\includegraphics[width=5cm]{images/cet_emblem.jpg} % Include a department/university logo - this will require the graphicx package
- 
-%----------------------------------------------------------------------------------------
+		Elastic search is widely used by giants on the web. Facebook, Wikipedia, and Github being examples. It was ranked as the most popular search engine database, outranking competitors like Solr and Sphinx.\cite{dbranking}
 
-\vfill % Fill the rest of the page with whitespace
+	\section{History}
+		Shay Banon, started working with Lucene, and finding its interface tricky started building an abstraction layer over it. It was released as an open-source library for Java called Compass.\cite{book}
 
-\end{titlepage}
-\pagenumbering{roman}
-\tableofcontents
-\newpage
-\listoffigures
-\newpage
+		Later, working in high performance distributed environments revealed the need for distributed solution to search. So Compass libraries were rewritten from scratch with distributed usage in mind. Making it available to different languages was easy as \ac{json} became an accepted standard of representing complex objects serially and \ac{rest}ful \ac{api}'s the standard interface to access functionality via \ac{http} connections, thus its implementaion, serialisation and deserialisation, being available in all languages
+	
+	\section{Features}
+		Elastic Search provides myriads of features on top of the abstraction of and simple interface to Lucene. Some of the features, excluding search are explored here
 
-\begin{abstract}
-Your abstract.
-\end{abstract}
+		\subsection{Document Oriented}
+			Elastic search is document oriented. Instead of trying to create columns where the data can fit, the data is stored as a \ac{json} object. Not only that, but each field is indexed for searchability. \emph{ie} instead of searching on rows, searching is done on documents.\cite{book}
 
-\section{Introduction}
+			\ac{json} is a format of representing complex objects serially. It is the standard format accepted by almost all languages and conversion to and from \ac{json} can be done easily. Representing a document as \ac{json} instead of a native object makes it serial, thus having the added benefit of being a viable parameter in a \ac{http} request, or a \ac{rest}ful \ac{api}.
+			
+			\subsubsection{Index}
+			Documents are stored under indices. An index is a name given to a store of data. In actuality it is a collective name representing a group of shards which contain the documents. Indices can be considered as analogous to databases in a relational model. Index\textsubscript{(\emph{noun})} is not to be confused with Index\textsubscript{(\emph{verb})} which means to add a document to an index.
 
-Your introduction goes here! Some examples of commonly used commands and features are listed below, to help you get started.
+			\subsubsection{Type}
+			An Index can have documents of multiple types. A type is a logical grouping of documents that are similar, or have content that have most of their fields common. A type can be compared to a table of a relational model. 
 
-If you have a question, please use the support box in the bottom right of the screen to get in touch. 
+			Each type has its own mapping or schema definition which defines how the fields of the documents of that type must be indexed. For example, a date field would be indexed to allow a range filter to be used on it, while a string field would be indexed for full search capability.
 
-\section{Some \LaTeX{} Examples}
-\label{sec:examples}
+			\subsubsection{Id}
+			Each document is indexed with an identification field id. Analogous to a row in relational databases, id can be used to get a document from the database, provided you have the index and the type in which it is stored. 
 
-\subsection{Sections}
+			Id also helps in routing, or determining which shard the document will be stored in, the details of which are provided in the next section
 
-Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+			\subsubsection{Dynamic Mapping}
+			Type mappings are optional, if mappings are not provided explicitly, Elastic tries to guess the mapping of the fields provided based on the first document that it is given to index. String fields map to string type, and a standard analyzer is tacked on it while a field with value like `2014/01/01' would be mapped to a date type.
 
-\subsection{Comments}
-
-Comments can be added to the margins of the document using the \todo{Here's a comment in the margin!} todo command, as shown in the example on the right. You can also add inline comments too:
-
-\todo[inline, color=green!40]{This is an inline comment.}
-
-\subsection{Tables and Figures}
-
-Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
-
-% Commands to include a figure:
-\begin{figure}
-\centering
-% \includegraphics[width=0.5\textwidth]{frog.jpg}
-\caption{\label{fig:frog}This is a figure caption.}
-\end{figure}
-
-\begin{table}
-\centering
-\begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
-\end{tabular}
-\caption{\label{tab:widgets}An example table.}
-\end{table}
-
-\subsection{Mathematics}
-
-\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i$$
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
-
-\subsection{Lists}
-
-You can make lists with automatic numbering \dots
-
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
-\begin{itemize}
-\item Like this,
-\item and like this.
-\end{itemize}
-
-We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
-
+		\subsection{Sharding}
+			A shard can be explained simply as a piece of an Index. A shard is a fully function Lucene Search Engine, and more than one such shard is allocated to a single index. Each shard can function independantly from every other shard, so a sharded index is much more distributed than an unsharded one.
+			\subsubsection{Distrubuted Document Store}
+				Elastic Search employs the concept of sharding to ensure that the 
+	% \nocite{*}
+	\newpage
+	\bibliography{../common/seminar}
+	\bibliographystyle{ieeetr}
 \end{document}

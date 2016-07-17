@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1323,7 +1323,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 211--211
 ] (./seminar.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 5.
+(Font)              using `OT1/cmss/bx/n' instead on input line 21.
 
 )
 Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
@@ -1333,6 +1333,14 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
 [28
 
  </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
+[][]  
+ []
+
+[29
+
+
+]
 \tf@nav=\write6
 \openout6 = `seminar.nav'.
 
@@ -1344,8 +1352,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
-
-(./seminar.aux)
+ (./seminar.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
@@ -1361,10 +1368,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  ) 
 Here is how much of TeX's memory you used:
- 29669 strings out of 493054
- 705857 string characters out of 6140586
- 906513 words of memory out of 5000000
- 32506 multiletter control sequences out of 15000+600000
+ 29682 strings out of 493054
+ 706066 string characters out of 6140586
+ 907513 words of memory out of 5000000
+ 32514 multiletter control sequences out of 15000+600000
  9398 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,13n,93p,1753b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1374,10 +1381,10 @@ ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on seminar.pdf (28 pages, 322071 bytes).
+Output written on seminar.pdf (29 pages, 323476 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

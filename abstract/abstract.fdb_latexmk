@@ -1,12 +1,14 @@
 # Fdb version 3
-["bibtex abstract"] 1468734336 "abstract.aux" "abstract.bbl" "abstract" 1468734336
+["bibtex abstract"] 1468734336 "abstract.aux" "abstract.bbl" "abstract" 1468735495
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1447534200 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "abstract.aux" 1468734336 129 cd13125f2eed31bf4aec6447cb0ce4f0 ""
+  "abstract.aux" 1468735495 129 cd13125f2eed31bf4aec6447cb0ce4f0 ""
   "abstract.bcf" 0 -1 0 ""
-  "abstract.bib" 1468734336 851 2388cdcc435ad800e720bdb22a7b69a8 ""
+  "abstract.bib" 1468735495 851 2388cdcc435ad800e720bdb22a7b69a8 ""
   (generated)
   "abstract.bbl"
-["pdflatex"] 1468734336 "abstract.tex" "abstract.pdf" "abstract" 1468734336
+  "abstract.blg"
+["pdflatex"] 1468735495 "abstract.tex" "abstract.pdf" "abstract" 1468735495
+  "../common/abstract.tex" 1468735441 1191 d3b5bba2266143da754012a483934739 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1447534192 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1447534189 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1447534189 1328 5442e22a7072966dbaf88ca900acf3f0 ""
@@ -39,12 +41,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1447534201 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1468429059 336303 42ebeadaa951859ffe4d64c9bccdcfa1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1467280963 7214063 c7ea8b5f6c8f50d187dd49a1c5a0f188 ""
-  "abstract.aux" 1468734336 129 cd13125f2eed31bf4aec6447cb0ce4f0 ""
+  "abstract.aux" 1468735495 129 cd13125f2eed31bf4aec6447cb0ce4f0 ""
   "abstract.bbl" 1468734336 686 2dfbb642818e48595e370aad5e64b0ad "bibtex abstract"
-  "abstract.bib" 1468734336 851 2388cdcc435ad800e720bdb22a7b69a8 ""
-  "abstract.tex" 1468734303 2500 e1d0448048ce8e4c0a29527a567f691a ""
+  "abstract.bib" 1468735495 851 2388cdcc435ad800e720bdb22a7b69a8 ""
+  "abstract.tex" 1468735494 1339 e3bc55036ab97816380fa714d9f61e08 ""
   (generated)
-  "abstract.bib"
-  "abstract.aux"
   "abstract.log"
+  "abstract.aux"
+  "abstract.bib"
   "abstract.pdf"
