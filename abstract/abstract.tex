@@ -1,0 +1,67 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{filecontents}
+\begin{filecontents}{abstract.bib}
+@article{spes,
+title = {Survey Paper on Elastic Search},
+author = {Gupta, Pragya and Nair, Sreeja},
+journal = {International Journal of Science and Research (IJSR)},
+year = {2016},
+month = {January}
+},
+@book{esdg,
+title = {Elasticsearch: The Definitive Guide },
+author = {Gormley,Clinton and Tong,Zachary },
+publisher = {O'Reilly Media},
+date = {January 2015}
+},
+@article{mmre,
+title = {Mining Modern Repositories with Elasticsearch},
+author = {Kononenko,Oleksii and Baysal,Olga and Holmes, Reid and Godfrey, Michael},
+journal = {University of Waterloo, Waterloo, ON, Canada},
+year = {2014}
+},
+@misc{site,
+title = {Elasticsearch: Search and Analyze Data in Real Time},
+author = {https://www.elastic.co/products/elasticsearch}
+}
+
+\end{filecontents}
+
+\title{\Huge {\textbf {Elastic Search}}}
+\author{
+  \Large { Mohammed Nisham K } \\
+  mnishamk1995@gmail.com \\
+  \small Roll No 39, S7 CSE \\
+  \\
+  \Large {Guide : Vipin Vasu A V}\\
+  vipin@cet.ac.in
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\nocite{*}
+
+\renewcommand{\abstractname}{\Large Abstract}
+\begin{abstract}
+Elastic search is a way to organize data and make it easily accessible. 
+It is a server  based search on Lucene. It is a highly scalable, distributed and full-text search engine. 
+Elastic search is developed in Java. It is published as open source under the terms of the Apache License. 
+Elasticsearch is the most popular enterprise search engine. Elasticsearch includes all advances in speed, security, 
+scalability, and hardware efficiency. Elastic search is a tool for querying written words. It can perform some other 
+smart tasks, but its principal is returning text similar to a given query and statistical analyses of a quantity of text. 
+Elasticsearch is a standalone database server,  which  is  written  in  Java and using HTTP/JSON protocol,it’s  takes  data  
+and  optimizes  the  data  according  to  language  based searches and stores it in a sophisticated format. 
+Elastic search is very convenient, supporting clustering and leader selection out of the box.  
+Whether  it’s  searching  a  database  of  trade  products  by  description,  finding  similar  text  in  a  body  of  
+crawled  web  pages. Elasticsearch is an excellent tool. 
+\end{abstract}
+
+\bibliography{abstract}{}
+\bibliographystyle{plain}
+
+\end{document}

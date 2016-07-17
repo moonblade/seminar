@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2015/10/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -438,18 +438,18 @@ LaTeX Info: Redefining \addtolength on input line 81.
 (./seminar.aux)
 \openout1 = `seminar.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
  (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -515,45 +515,60 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-<pic/cet_emblem.jpg, id=4, 200.75pt x 223.83624pt>
-File: pic/cet_emblem.jpg Graphic file (type jpg)
- <use pic/cet_emblem.jpg>
-Package pdftex.def Info: pic/cet_emblem.jpg used on input line 39.
-(pdftex.def)             Requested size: 103.50105pt x 115.40503pt.
+Overfull \hbox (8.97034pt too wide) in paragraph at lines 40--43
+\OT1/cmr/m/n/14.4 mnishamk1995@gmail.com 
+ []
 
-[1
+<images/cet_emblem.jpg, id=4, 200.75pt x 223.83624pt>
+File: images/cet_emblem.jpg Graphic file (type jpg)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pic/cet_emblem.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+<use images/cet_emblem.jpg>
+Package pdftex.def Info: images/cet_emblem.jpg used on input line 67.
+(pdftex.def)             Requested size: 142.26378pt x 158.63452pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/cet_emblem.jpg>] 
+(./seminar.toc)
+\tf@toc=\write4
+\openout4 = `seminar.toc'.
+
+ [1] (./seminar.lof)
+\tf@lof=\write5
+\openout5 = `seminar.lof'.
+
+ [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
+
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [2] (./seminar.aux) ) 
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+ [4] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
- 13185 strings out of 493054
- 257658 string characters out of 6140586
- 314154 words of memory out of 5000000
- 16431 multiletter control sequences out of 15000+600000
- 9322 words of font info for 34 fonts, out of 8000000 for 9000
+ 13287 strings out of 493054
+ 259926 string characters out of 6140586
+ 318393 words of memory out of 5000000
+ 16526 multiletter control sequences out of 15000+600000
+ 12180 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,417b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,80p,417b,704s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb>
-Output written on seminar.pdf (2 pages, 126805 bytes).
+x10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+12.pfb>
+Output written on seminar.pdf (5 pages, 141469 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

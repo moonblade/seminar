@@ -1,36 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% University Assignment Title Page 
-% LaTeX Template
-% Version 1.0 (27/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-% 
-% Instructions for using this template:
-% This title page is capable of being compiled as is. This is not useful for 
-% including it in another document. To do this, you have two options: 
-%
-% 1) Copy/paste everything between \begin{document} and \end{document} 
-% starting at \begin{titlepage} and paste this into another LaTeX file where you 
-% want your title page.
-% OR
-% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
-% move this file to the same directory as the LaTeX file you wish to add it to. 
-% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
-% title page.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\title{Title page with logo}
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[12pt]{article}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -51,16 +18,16 @@
 %	HEADING SECTIONS
 %----------------------------------------------------------------------------------------
 
-\textsc{\LARGE University Name}\\[1.5cm] % Name of your university/college
-\textsc{\Large Major Heading}\\[0.5cm] % Major heading such as course name
-\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+\textsc{\LARGE College of Engineering, Trivandrum}\\[1.5cm] % Name of your university/college
+\textsc{\Large Computer Science and Engineering}\\[0.5cm] % Major heading such as course name
+% \textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Title}\\[0.4cm] % Title of your document
+{ \huge \bfseries Elastic Search}\\[0.4cm] % Title of your document
 \HRule \\[1.5cm]
  
 %----------------------------------------------------------------------------------------
@@ -69,15 +36,17 @@
 
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
-\emph{Author:}\\
-John \textsc{Smith} % Your name
+\emph{Submitted By:}\\
+Mohammed Nisham K % Your name
+mnishamk1995@gmail.com
+Roll No 39
 \end{flushleft}
 \end{minipage}
 ~
 \begin{minipage}{0.4\textwidth}
 \begin{flushright} \large
-\emph{Supervisor:} \\
-Dr. James \textsc{Smith} % Supervisor's Name
+\emph{Guide:} \\
+Vipin Vasu % Supervisor's Name
 \end{flushright}
 \end{minipage}\\[2cm]
 
@@ -89,21 +58,22 @@ Dr. James \textsc{Smith} % Supervisor's Name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics[width=5cm]{images/logo.jpg} % Include a department/university logo - this will require the graphicx package
+\includegraphics[width=5cm]{images/cet_emblem.jpg} % Include a department/university logo - this will require the graphicx package
  
 %----------------------------------------------------------------------------------------
 
 \vfill % Fill the rest of the page with whitespace
 
-\end{titlepage}\\
-\newpage
+\end{titlepage}
+\pagenumbering{roman}
 \tableofcontents
+\newpage
 \listoffigures
 \newpage
 

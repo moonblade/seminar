@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{iii}
+\contentsline {section}{\numberline {2}Some \LaTeX {} Examples}{iii}
+\contentsline {subsection}{\numberline {2.1}Sections}{iii}
+\contentsline {subsection}{\numberline {2.2}Comments}{iii}
+\contentsline {subsection}{\numberline {2.3}Tables and Figures}{iii}
+\contentsline {subsection}{\numberline {2.4}Mathematics}{iv}
+\contentsline {subsection}{\numberline {2.5}Lists}{iv}
