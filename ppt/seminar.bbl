@@ -8,6 +8,10 @@ Apache lucene core.
 Benchmark of some php clients for elasticsearch.
 \newblock https://github.com/jolicode/elasticsearch-php-benchmark.
 
+\bibitem{dbranking}
+Db-engines ranking - popularity ranking of database management systems.
+\newblock http://www.db-engines.com/en/ranking.
+
 \bibitem{memorybenchmark}
 Elasticsearch php clients test drive.
 \newblock https://jolicode.com/blog/elasticsearch-php-clients-test-drive.

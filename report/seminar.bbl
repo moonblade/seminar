@@ -9,8 +9,19 @@ O.~Kononenko, O.~Baysal, R.~Holmes, and M.~Godfrey, ``Mining modern
 C.~Gormley and Z.~Tong, {\em Elasticsearch: The Definitive Guide}.
 \newblock O'Reilly Media.
 
+\bibitem{lucenesite}
+``Apache lucene core.'' https://lucene.apache.org/core/.
+
 \bibitem{dbranking}
 ``Db-engines ranking - popularity ranking of database management systems.''
   http://www.db-engines.com/en/ranking.
+
+\bibitem{site}
+``Elasticsearch: Search and analyze data in real time.''
+  https://www.elastic.co/products/elasticsearch.
+
+\bibitem{ijsr}
+P.~Gupta and S.~Nair, ``Survey paper on elastic search,'' {\em International
+  Journal of Science and Research (IJSR)}, January 2016.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,14 +1147,14 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 43--43
 ] [6
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 61--61
+Overfull \hbox (0.4pt too wide) in paragraph at lines 55--55
 [][]  
  []
 
 [7
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 72--72
+Overfull \hbox (0.4pt too wide) in paragraph at lines 67--67
 [][]  
  []
 
@@ -1163,21 +1163,21 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 72--72
 ] <inside_shard.png, id=85, 752.8125pt x 496.85625pt>
 File: inside_shard.png Graphic file (type png)
  <use inside_shard.png>
-Package pdftex.def Info: inside_shard.png used on input line 79.
+Package pdftex.def Info: inside_shard.png used on input line 74.
 (pdftex.def)             Requested size: 284.52756pt x 187.79143pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 79--79
+Overfull \hbox (0.4pt too wide) in paragraph at lines 74--74
 [][]  
  []
 
 
-Overfull \vbox (10.97725pt too high) detected at line 79
+Overfull \vbox (10.97725pt too high) detected at line 74
  []
 
 [9
 
  <./inside_shard.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 90--90
+Overfull \hbox (0.4pt too wide) in paragraph at lines 85--85
 [][]  
  []
 
@@ -1186,10 +1186,10 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 90--90
 ] <cluster.png, id=98, 752.8125pt x 225.84375pt>
 File: cluster.png Graphic file (type png)
  <use cluster.png>
-Package pdftex.def Info: cluster.png used on input line 97.
+Package pdftex.def Info: cluster.png used on input line 92.
 (pdftex.def)             Requested size: 284.52756pt x 85.35973pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 97--97
+Overfull \hbox (0.4pt too wide) in paragraph at lines 92--92
 [][]  
  []
 
@@ -1199,31 +1199,31 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 97--97
 File: cluster_data.png Graphic file (type png)
 
 <use cluster_data.png>
-Package pdftex.def Info: cluster_data.png used on input line 104.
+Package pdftex.def Info: cluster_data.png used on input line 99.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 104--104
+Overfull \hbox (0.4pt too wide) in paragraph at lines 99--99
 [][]  
  []
 
 [12
 
  <./cluster_data.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 113--113
+Overfull \hbox (0.4pt too wide) in paragraph at lines 108--108
 [][]  
  []
 
 [13
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 121--121
+Overfull \hbox (0.4pt too wide) in paragraph at lines 116--116
 [][]  
  []
 
 [14
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 129--129
+Overfull \hbox (0.4pt too wide) in paragraph at lines 124--124
 [][]  
  []
 
@@ -1232,7 +1232,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 129--129
 ] [16
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 139--139
+Overfull \hbox (0.4pt too wide) in paragraph at lines 134--134
 [][]  
  []
 
@@ -1241,10 +1241,10 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 139--139
 ] <query_phase.png, id=138, 752.8125pt x 338.26375pt>
 File: query_phase.png Graphic file (type png)
  <use query_phase.png>
-Package pdftex.def Info: query_phase.png used on input line 146.
+Package pdftex.def Info: query_phase.png used on input line 141.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 146--146
+Overfull \hbox (0.4pt too wide) in paragraph at lines 141--141
 [][]  
  []
 
@@ -1254,31 +1254,31 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 146--146
 File: fetch_phase.png Graphic file (type png)
 
 <use fetch_phase.png>
-Package pdftex.def Info: fetch_phase.png used on input line 153.
+Package pdftex.def Info: fetch_phase.png used on input line 148.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 153--153
+Overfull \hbox (0.4pt too wide) in paragraph at lines 148--148
 [][]  
  []
 
 [19
 
  <./fetch_phase.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 165--165
+Overfull \hbox (0.4pt too wide) in paragraph at lines 160--160
 [][]  
  []
 
 [20
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 174--174
+Overfull \hbox (0.4pt too wide) in paragraph at lines 169--169
 [][]  
  []
 
 [21
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 186--186
+Overfull \hbox (0.4pt too wide) in paragraph at lines 181--181
 [][]  
  []
 
@@ -1287,7 +1287,7 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 186--186
 ] [23
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 197--197
+Overfull \hbox (0.4pt too wide) in paragraph at lines 192--192
 [][]  
  []
 
@@ -1296,10 +1296,10 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 197--197
 ] <clients.png, id=179, 611.886pt x 418.2024pt>
 File: clients.png Graphic file (type png)
  <use clients.png>
-Package pdftex.def Info: clients.png used on input line 204.
+Package pdftex.def Info: clients.png used on input line 199.
 (pdftex.def)             Requested size: 227.62204pt x 155.5684pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 204--204
+Overfull \hbox (0.4pt too wide) in paragraph at lines 199--199
 [][]  
  []
 
@@ -1309,10 +1309,10 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 204--204
 File: clients_memory.png Graphic file (type png)
 
 <use clients_memory.png>
-Package pdftex.def Info: clients_memory.png used on input line 211.
+Package pdftex.def Info: clients_memory.png used on input line 206.
 (pdftex.def)             Requested size: 227.62204pt x 174.54988pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 211--211
+Overfull \hbox (0.4pt too wide) in paragraph at lines 206--206
 [][]  
  []
 
@@ -1323,17 +1323,17 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 211--211
 ] (./seminar.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 21.
+(Font)              using `OT1/cmss/bx/n' instead on input line 25.
 
 )
-Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
+Overfull \hbox (0.4pt too wide) in paragraph at lines 217--217
 [][]  
  []
 
 [28
 
  </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
+Overfull \hbox (0.4pt too wide) in paragraph at lines 217--217
 [][]  
  []
 
@@ -1350,11 +1350,11 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 222--222
 \tf@snm=\write8
 \openout8 = `seminar.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
  (./seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
 (rerunfilecheck)             Checksum: DB9F33F4525909526C645D5401B5145E;176.
 
@@ -1365,13 +1365,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 29682 strings out of 493054
- 706066 string characters out of 6140586
+ 29685 strings out of 493054
+ 706117 string characters out of 6140586
  907513 words of memory out of 5000000
- 32514 multiletter control sequences out of 15000+600000
+ 32516 multiletter control sequences out of 15000+600000
  9398 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,13n,93p,1753b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1381,10 +1381,10 @@ ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on seminar.pdf (29 pages, 323476 bytes).
+Output written on seminar.pdf (29 pages, 323609 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

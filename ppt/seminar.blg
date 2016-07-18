@@ -7,46 +7,47 @@ Warning--to sort, need author or key in site
 Warning--to sort, need author or key in benchmark
 Warning--to sort, need author or key in memorybenchmark
 Warning--to sort, need author or key in lucenesite
+Warning--to sort, need author or key in dbranking
 Warning--empty year in book
-You've used 7 entries,
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            523 strings with 4479 characters,
-and the built_in function-call counts, 1452 in all, are:
-= -- 131
-> -- 53
+            526 strings with 4594 characters,
+and the built_in function-call counts, 1611 in all, are:
+= -- 146
+> -- 54
 < -- 0
-+ -- 23
++ -- 24
 - -- 16
-* -- 71
-:= -- 222
-add.period$ -- 17
-call.type$ -- 7
-change.case$ -- 28
+* -- 76
+:= -- 239
+add.period$ -- 19
+call.type$ -- 8
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 60
-empty$ -- 149
+cite$ -- 14
+duplicate$ -- 67
+empty$ -- 172
 format.name$ -- 16
-if$ -- 319
+if$ -- 359
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 4
-newline$ -- 34
+newline$ -- 38
 num.names$ -- 6
-pop$ -- 55
+pop$ -- 63
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 24
 quote$ -- 0
-skip$ -- 53
+skip$ -- 61
 stack$ -- 0
-substring$ -- 35
-swap$ -- 7
+substring$ -- 40
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 26
-warning$ -- 5
+type$ -- 30
+warning$ -- 6
 while$ -- 6
-width$ -- 8
-write$ -- 59
-(There were 5 warnings)
+width$ -- 9
+write$ -- 66
+(There were 6 warnings)

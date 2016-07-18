@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  17 JUL 2016 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  18 JUL 2016 08:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1003,11 +1003,11 @@ Overfull \hbox (8.97034pt too wide) in paragraph at lines 32--35
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/cet_emblem.jpg>] 
-(./seminar.toc)
+(./seminar.toc [1])
 \tf@toc=\write4
 \openout4 = `seminar.toc'.
 
- [1] (./seminar.lof)
+ (./seminar.lof)
 \tf@lof=\write5
 \openout5 = `seminar.lof'.
 
@@ -1017,26 +1017,78 @@ Overfull \hbox (7.12875pt too wide) in paragraph at lines 67--68
 p-pli-ca-tions. No[]SQL
  []
 
-[2] [3] [4] (./seminar.bbl) [5] (./seminar.aux) ) 
+[2] [3] [4] <images/inside_shard.png, id=40, 752.8125pt x 496.85625pt>
+File: images/inside_shard.png Graphic file (type png)
+
+<use images/inside_shard.png>
+Package pdftex.def Info: images/inside_shard.png used on input line 135.
+(pdftex.def)             Requested size: 284.52756pt x 187.79143pt.
+ [5 <./images/inside_shard.png>] [6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 153.
+
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+
+<images/cluster.png, id=49, 752.8125pt x 225.84375pt>
+File: images/cluster.png Graphic file (type png)
+ <use images/cluster.png>
+Package pdftex.def Info: images/cluster.png used on input line 167.
+(pdftex.def)             Requested size: 284.52756pt x 85.35973pt.
+
+[7] <images/cluster_data.png, id=54, 752.8125pt x 338.26375pt>
+File: images/cluster_data.png Graphic file (type png)
+
+<use images/cluster_data.png>
+Package pdftex.def Info: images/cluster_data.png used on input line 176.
+(pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
+ [8 <./images/cluster.png> <./images/cluster_data.png>] [9] [10] (/usr/share/te
+xmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+<images/query_phase.png, id=67, 752.8125pt x 338.26375pt>
+File: images/query_phase.png Graphic file (type png)
+
+<use images/query_phase.png>
+Package pdftex.def Info: images/query_phase.png used on input line 235.
+(pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
+ [11]
+<images/fetch_phase.png, id=71, 752.8125pt x 338.26375pt>
+File: images/fetch_phase.png Graphic file (type png)
+
+<use images/fetch_phase.png>
+Package pdftex.def Info: images/fetch_phase.png used on input line 242.
+(pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
+ [12 <./images/query_phase.png> <./images/fetch_phase.png>] [13] [14] (./semina
+r.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+[]\OT1/cmr/m/n/12 ``Elasticsearch: Search and an-a-lyze data in real time.''
+ []
+
+) [15] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
- 23552 strings out of 493054
- 476221 string characters out of 6140586
- 504212 words of memory out of 5000000
- 26708 multiletter control sequences out of 15000+600000
+ 23875 strings out of 493054
+ 480463 string characters out of 6140586
+ 507536 words of memory out of 5000000
+ 27019 multiletter control sequences out of 15000+600000
  11731 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,5n,56p,10370b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti8.pfb>
-Output written on seminar.pdf (9 pages, 116583 bytes).
+ 62i,9n,56p,10370b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on seminar.pdf (19 pages, 313270 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
