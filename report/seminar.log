@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  18 JUL 2016 08:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  18 JUL 2016 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,18 +1062,47 @@ File: images/fetch_phase.png Graphic file (type png)
 <use images/fetch_phase.png>
 Package pdftex.def Info: images/fetch_phase.png used on input line 242.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
- [12 <./images/query_phase.png> <./images/fetch_phase.png>] [13] [14] (./semina
-r.bbl
+ [12 <./images/query_phase.png> <./images/fetch_phase.png>] [13] [14] [15]
+Overfull \hbox (1.62788pt too wide) in paragraph at lines 293--294
+[]\OT1/cmr/m/n/12 For al-low-ing the fea-ture of search as you type, doc-u-ment
+ fields are matched
+ []
+
+[16] <images/clients.png, id=90, 611.886pt x 418.2024pt>
+File: images/clients.png Graphic file (type png)
+
+<use images/clients.png>
+Package pdftex.def Info: images/clients.png used on input line 324.
+(pdftex.def)             Requested size: 284.52756pt x 194.4621pt.
+ [17 <./images/clients.png>]
+<images/clients_memory.png, id=95, 387.4475pt x 297.11pt>
+File: images/clients_memory.png Graphic file (type png)
+
+<use images/clients_memory.png>
+Package pdftex.def Info: images/clients_memory.png used on input line 331.
+(pdftex.def)             Requested size: 284.52756pt x 218.1896pt.
+ [18 <./images/clients_memory.png>]
+(./seminar.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\OT1/cmr/m/n/12 ``Elasticsearch: Search and an-a-lyze data in real time.''
  []
 
-) [15] (./seminar.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+[]\OT1/cmr/m/n/12 ``Elasticsearch php clients test drive.''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+[]\OT1/cmr/m/n/12 ``Benchmark of some php clients for elas-tic-search.''
+ []
+
+) [19] (./seminar.aux) ) 
 Here is how much of TeX's memory you used:
- 23875 strings out of 493054
- 480463 string characters out of 6140586
- 507536 words of memory out of 5000000
- 27019 multiletter control sequences out of 15000+600000
+ 23900 strings out of 493054
+ 481023 string characters out of 6140586
+ 508950 words of memory out of 5000000
+ 27042 multiletter control sequences out of 15000+600000
  11731 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,56p,10370b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1085,10 +1114,10 @@ e1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on seminar.pdf (19 pages, 313270 bytes).
+Output written on seminar.pdf (23 pages, 391586 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

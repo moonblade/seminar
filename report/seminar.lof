@@ -5,3 +5,5 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Request routing in a cluster}}{8}
 \contentsline {figure}{\numberline {5}{\ignorespaces Query phase in distributed search}}{12}
 \contentsline {figure}{\numberline {6}{\ignorespaces Fetch phase in distributed search}}{12}
+\contentsline {figure}{\numberline {7}{\ignorespaces Performance analysis of different PHP Clients of ES}}{17}
+\contentsline {figure}{\numberline {8}{\ignorespaces Memory and Time requirement of different PHP Clients of ES}}{18}

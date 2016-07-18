@@ -39,3 +39,19 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Inverse Document Frequency}{13}
 \contentsline {subsubsection}{\numberline {4.2.3}Field Length Normalisation}{13}
 \contentsline {subsubsection}{\numberline {4.2.4}Boost}{14}
+\contentsline {subsection}{\numberline {4.3}Structured Search}{14}
+\contentsline {subsubsection}{\numberline {4.3.1}Search Lite}{14}
+\contentsline {subsubsection}{\numberline {4.3.2}Query \ac {dsl}}{14}
+\contentsline {subsubsection}{\numberline {4.3.3}Query and Filter}{14}
+\contentsline {subsection}{\numberline {4.4}Full Text Search}{15}
+\contentsline {subsubsection}{\numberline {4.4.1}Multi word and Multi field search}{15}
+\contentsline {subsubsection}{\numberline {4.4.2}Phrase search}{15}
+\contentsline {subsubsection}{\numberline {4.4.3}Search as you type}{16}
+\contentsline {subsubsection}{\numberline {4.4.4}Fuzzy Search}{16}
+\contentsline {section}{\numberline {5}Conclusion}{16}
+\contentsline {subsection}{\numberline {5.1}Uses}{16}
+\contentsline {subsubsection}{\numberline {5.1.1}Real time and full text search}{16}
+\contentsline {subsubsection}{\numberline {5.1.2}Logging massive data}{17}
+\contentsline {subsubsection}{\numberline {5.1.3}Geolocation with full text search}{17}
+\contentsline {subsubsection}{\numberline {5.1.4}Sheer scale}{17}
+\contentsline {subsection}{\numberline {5.2}Performance Analysis}{17}

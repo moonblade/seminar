@@ -24,4 +24,12 @@ C.~Gormley and Z.~Tong, {\em Elasticsearch: The Definitive Guide}.
 P.~Gupta and S.~Nair, ``Survey paper on elastic search,'' {\em International
   Journal of Science and Research (IJSR)}, January 2016.
 
+\bibitem{memorybenchmark}
+``Elasticsearch php clients test drive.''
+  https://jolicode.com/blog/elasticsearch-php-clients-test-drive.
+
+\bibitem{benchmark}
+``Benchmark of some php clients for elasticsearch.''
+  https://github.com/jolicode/elasticsearch-php-benchmark.
+
 \end{thebibliography}

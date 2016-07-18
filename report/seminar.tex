@@ -244,12 +244,7 @@
 				\end{figure}
 
 		\subsection{Relevance Score}
-			Databases that deal purely in structured data (such as dates, numbers, and string
-			enums) have it easy. they just have to check whether a document (or a row, in a relational database) matches the query.
-
-			While Boolean yes/no matches are an essential part of full-text search, they are not
-			enough by themselves. Instead, the relevance of each document to the query is to be found as well. Full-text search engines have to not only find the matching documents,
-			but also sort them by relevance.
+			Databases that deal purely in structured data have it easy. they just have to check whether a document matches the query. While Boolean yes/no matches are an essential part of full-text search, they are not enough by themselves. Instead, the relevance of each document to the query is to be found as well. Full-text search engines have to not only find the matching documents, but also sort them by relevance.
 
 			For a query, All matching documents are found, their relevance is found and then they are sorted by it. For this end, there should be a relevance score field for each retrieved document and this is stored in the metadata \_score field. Relevance is affected by the following factors
 
@@ -264,6 +259,79 @@
 
 			\subsubsection{Boost}
 				Druing search or index, individual fields can be boosted to count more towards relevance score. An example would be a tag field. Boosting a tag field ensures that a document is matched when any of tags match. 
+
+		\subsection{Structured Search}
+			In Elastic, search queries can be given in two different ways. One is a search lite syntax directly compatible with Lucene. This can be viewed as an inline approach to queries where queries are transformed into a single string. Another approach is to use a query \ac{dsl} which in itself is a full fledged language.
+
+			\subsubsection{Search Lite}
+				Search lite is a lightweight search method which is easy to use. It has less power and customizability but it can be used efficiently for simple searches. Search queries are conerted into a single query string. An example of a search lite query is \(``q:title=my title"\)
+
+			\subsubsection{Query \ac{dsl}}
+				Search lite can only be used for adhoc searches. It soon becomes too powerless to handle complex queries. Elastic provides a much more complex, flexible query language called \emph{query \ac{dsl}}. Query \ac{dsl} has a composable syntax, \emph{ie} smaller query elements can be combined to create complex queries. A bool filter for example can be used to combine two queries using or, and or not and so on. Combinations and nesting of query components allows for very complex queries to be made easily and comprehensively.
+
+				All search works on the basic principle of getting all documents that are related to the query and then trimming the long tail of irrelevant documents. Some of the common query elements are explored.
+
+			\subsubsection{Query and Filter}
+				A query element finds all documents that match a given search term. It uses the inverted index to find documents that match the query, and score them based on relevance. Matching more terms gives a higher score. Query terms can be combined with bool to increase number of related documents.
+
+				A filter element is used to trim the result of queries by using yes/no answers on structured data fields. Filters are much faster than queries, once they are executed they are cached in memory as bit masks, and are therefore cheap to use. Filters are executed before queries to eliminate as many documents as possible first before doing an expensive scoring operation in query. 
+
+		\subsection{Full Text Search}
+			Full text search is the most important advantage that Elastic has over its competitors. Not only is every document provided to it indexed for retrieval, every field in the document is indexed for search using an inverted index.
+
+			Normal databases indexes rows as a mapping from document to field. A field can be retrieved after a document is identified. But a field to document index does not exist which makes it hard to find documents given a part of the field. Elastic uses the inverted index to solve this problem eficiently.
+			\subsubsection{Multi word and Multi field search}
+				Elastic provides multi word search inherently. The multiword search string is split into tokens using the same analyzers used on the field. Depending on the analyzer, terms may be removed or stemmed. The final bag of terms is searched against the inverted index and scored.
+
+				Multi field search is provided using a metafield \_all. \_all field contains data from every field in the document. So a simple multifield search can be provided by searching against the \_all fields. More complicated multifield searches are possible using bool filters, which combine single field queries as required.
+			\subsubsection{Phrase search}
+				Querying for an exact phrase might give odd results, since the order of the terms are not saved. Phrase searches can be done by storing the position of the word as well as the document it indexes in the inverted index. This stored position is then matched again the relative position given in the query to give documents matching a phrase. Options are provided to decrease the strictness with which positions are considered.
+
+			\subsubsection{Search as you type}
+				An n-gram of a string is any substring of any length within the word. An edge n-gram is an n-gram which starts with the start of the string. For example, Edge n-grams of the word Brown are B, Br, Bro, Brow, Brown. 
+
+				For allowing the feature of search as you type, document fields are matched against n-grams of a field, not just the terms in it. So document results can be displayed before the search query is over.
+
+			\subsubsection{Fuzzy Search}
+				Typo handling is an important feature for a full text search. Users might not enter terms without errors, and it should be handled correctly by displaying the results the user was hoping for. 
+
+				Typo correction is achieved using fuzzy search which allows for errors in the search query. A fuzzy search for Browk would match Brown and Brook. A fuzziness factor determines how much of an error is allowed in the result. Fuzzy searches match much more documents than a normal search does. 
+
+	\section{Conclusion}
+		Elasticsearch is an easily scalable, full-text search engine that  is  capable  of  handling  large  amounts  of  online  and schema-less  data.
+
+		\subsection{Uses}
+			Elasticsearch finds uses in a wide range of applications, from giant corporations to startups use its features to provide real time applications.
+
+			Some use cases would include
+			\subsubsection{Real time and full text search}
+				Easily done using the features mentioned above. Real time full text search is one of the most prominent features of elastic search that finds its way into applications.
+
+			\subsubsection{Logging massive data}
+				It can be customized of use as a logging server easily with the use of plugins like marvel and such. The Guardian uses Elasticsearch to combine visitor logs with social -network data to provide real-time feedback to its editors about the public’s response to new articles.
+
+			\subsubsection{Geolocation with full text search}
+				Stack Overflow combines full-text search with geolocation queries and uses more-like-this to find related questions and answers.
+
+			\subsubsection{Sheer scale}
+				GitHub uses Elasticsearch to query 130 billion lines of code.
+
+		\subsection{Performance Analysis}
+			There are clients available for Elastic Search for different languages. They use native syntax and act as a connector to actual Elastic server.
+
+
+			\begin{figure}[ht]
+				\centering\includegraphics[width=10cm]{images/clients}
+				\caption{Performance analysis of different PHP Clients of ES}
+			\end{figure}
+
+			Elastic refers to the official elastic client. NerveTattoo was the first implementation of an elastic \ac{php} client. Sherlock came next, its alpha version was released, but since Elastica was released before it could go stable, development was stopped and sherlock got stuck in alpha phase. Elastica is the accepted or the most popular Elastic client for \ac{php} today\cite{memorybenchmark}. A comparison between these clients are given. In terms of time taken to serve requests\cite{benchmark} and memory requirements.
+
+			\begin{figure}[ht]
+				\centering\includegraphics[width=10cm]{images/clients_memory}
+				\caption{Memory and Time requirement of different PHP Clients of ES}
+			\end{figure}
+
 	% \nocite{*}
 	\newpage
 	\bibliography{../common/seminar}

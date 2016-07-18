@@ -281,6 +281,12 @@ INPUT ./images/query_phase.png
 INPUT images/fetch_phase.png
 INPUT ./images/fetch_phase.png
 INPUT ./images/fetch_phase.png
+INPUT images/clients.png
+INPUT ./images/clients.png
+INPUT ./images/clients.png
+INPUT images/clients_memory.png
+INPUT ./images/clients_memory.png
+INPUT ./images/clients_memory.png
 INPUT seminar.bbl
 INPUT seminar.bbl
 INPUT seminar.aux
