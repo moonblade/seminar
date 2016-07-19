@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  18 JUL 2016 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.30)  19 JUL 2016 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,7 +1012,7 @@ Overfull \hbox (8.97034pt too wide) in paragraph at lines 32--35
 \openout5 = `seminar.lof'.
 
  [2] [3] (../common/abstract.tex) [1]
-Overfull \hbox (7.12875pt too wide) in paragraph at lines 67--68
+Overfull \hbox (7.12875pt too wide) in paragraph at lines 68--69
 \OT1/cmr/m/n/12 Conventional re-la-tional databases fail to work for big-data a
 p-pli-ca-tions. No[]SQL
  []
@@ -1021,29 +1021,29 @@ p-pli-ca-tions. No[]SQL
 File: images/inside_shard.png Graphic file (type png)
 
 <use images/inside_shard.png>
-Package pdftex.def Info: images/inside_shard.png used on input line 135.
+Package pdftex.def Info: images/inside_shard.png used on input line 136.
 (pdftex.def)             Requested size: 284.52756pt x 187.79143pt.
  [5 <./images/inside_shard.png>] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 153.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 154.
 
 
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
 
 <images/cluster.png, id=49, 752.8125pt x 225.84375pt>
 File: images/cluster.png Graphic file (type png)
  <use images/cluster.png>
-Package pdftex.def Info: images/cluster.png used on input line 167.
+Package pdftex.def Info: images/cluster.png used on input line 168.
 (pdftex.def)             Requested size: 284.52756pt x 85.35973pt.
 
 [7] <images/cluster_data.png, id=54, 752.8125pt x 338.26375pt>
 File: images/cluster_data.png Graphic file (type png)
 
 <use images/cluster_data.png>
-Package pdftex.def Info: images/cluster_data.png used on input line 176.
+Package pdftex.def Info: images/cluster_data.png used on input line 177.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
  [8 <./images/cluster.png> <./images/cluster_data.png>] [9] [10] (/usr/share/te
 xmf-dist/tex/latex/ucs/data/uni-32.def
@@ -1053,17 +1053,17 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 File: images/query_phase.png Graphic file (type png)
 
 <use images/query_phase.png>
-Package pdftex.def Info: images/query_phase.png used on input line 235.
+Package pdftex.def Info: images/query_phase.png used on input line 236.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
  [11]
 <images/fetch_phase.png, id=71, 752.8125pt x 338.26375pt>
 File: images/fetch_phase.png Graphic file (type png)
 
 <use images/fetch_phase.png>
-Package pdftex.def Info: images/fetch_phase.png used on input line 242.
+Package pdftex.def Info: images/fetch_phase.png used on input line 243.
 (pdftex.def)             Requested size: 284.52756pt x 127.84991pt.
  [12 <./images/query_phase.png> <./images/fetch_phase.png>] [13] [14] [15]
-Overfull \hbox (1.62788pt too wide) in paragraph at lines 293--294
+Overfull \hbox (1.62788pt too wide) in paragraph at lines 294--295
 []\OT1/cmr/m/n/12 For al-low-ing the fea-ture of search as you type, doc-u-ment
  fields are matched
  []
@@ -1072,14 +1072,14 @@ Overfull \hbox (1.62788pt too wide) in paragraph at lines 293--294
 File: images/clients.png Graphic file (type png)
 
 <use images/clients.png>
-Package pdftex.def Info: images/clients.png used on input line 324.
+Package pdftex.def Info: images/clients.png used on input line 325.
 (pdftex.def)             Requested size: 284.52756pt x 194.4621pt.
  [17 <./images/clients.png>]
 <images/clients_memory.png, id=95, 387.4475pt x 297.11pt>
 File: images/clients_memory.png Graphic file (type png)
 
 <use images/clients_memory.png>
-Package pdftex.def Info: images/clients_memory.png used on input line 331.
+Package pdftex.def Info: images/clients_memory.png used on input line 332.
 (pdftex.def)             Requested size: 284.52756pt x 218.1896pt.
  [18 <./images/clients_memory.png>]
 (./seminar.bbl
@@ -1114,7 +1114,7 @@ e1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on seminar.pdf (23 pages, 391586 bytes).
+Output written on seminar.pdf (23 pages, 391606 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream

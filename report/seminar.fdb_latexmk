@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex seminar"] 1468826937 "seminar.aux" "seminar.bbl" "seminar" 1468827184
+["bibtex seminar"] 1468826937 "seminar.aux" "seminar.bbl" "seminar" 1468903995
   "../common/seminar.bib" 1468745661 1287 a6c21a2c32ded32faef7d78991645df0 ""
   "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1447534200 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "seminar.aux" 1468827184 7806 6587c6713d8bd519549743403120f538 ""
+  "seminar.aux" 1468903995 7806 6587c6713d8bd519549743403120f538 ""
   "seminar.bcf" 0 -1 0 ""
   (generated)
-  "seminar.blg"
   "seminar.bbl"
-["pdflatex"] 1468827181 "seminar.tex" "seminar.pdf" "seminar" 1468827184
-  "../common/abstract.tex" 1468735983 948 568f5e4815bec48b2fdb7b3e5c55e891 ""
+  "seminar.blg"
+["pdflatex"] 1468903994 "seminar.tex" "seminar.pdf" "seminar" 1468903995
+  "../common/abstract.tex" 1468903872 948 892ee7a4c789a1e216722dbfc5a9f5ac ""
   "./images/cet_emblem.jpg" 1468733153 13168 96233e4daacbbad18f905d980c31e0c2 ""
   "./images/clients.png" 1468732759 79932 c78e3a95b302c80f248e4e8d6eddf7f0 ""
   "./images/clients_memory.png" 1468732759 18529 06f24adc8c315258147af0ed03163d2b ""
@@ -185,15 +185,15 @@
   "images/fetch_phase.png" 1468732759 33913 048a9e20f83f9574bee5f21bbca185bc ""
   "images/inside_shard.png" 1468732759 46509 2769454bc797036096d39239216bbb50 ""
   "images/query_phase.png" 1468732759 33817 c555eeb643478274802cd2402b836525 ""
-  "seminar.aux" 1468827184 7806 6587c6713d8bd519549743403120f538 ""
+  "seminar.aux" 1468903995 7806 6587c6713d8bd519549743403120f538 ""
   "seminar.bbl" 1468826937 1096 7966cbb55d7c06f10a1f8ca584549b34 "bibtex seminar"
-  "seminar.lof" 1468827184 753 bf6fd5811236a2b64b24ac901fcc2993 ""
-  "seminar.tex" 1468827181 29807 892a12ca954d4e34d119c0f2a768bd03 ""
-  "seminar.toc" 1468827184 3772 3a4d239c1c8f09d1cfcbb94ee2805d01 ""
+  "seminar.lof" 1468903995 753 bf6fd5811236a2b64b24ac901fcc2993 ""
+  "seminar.tex" 1468903992 29824 e219adb97b2fe021ef53cf72bde38c1a ""
+  "seminar.toc" 1468903995 3772 3a4d239c1c8f09d1cfcbb94ee2805d01 ""
   (generated)
-  "seminar.pdf"
-  "seminar.lof"
-  "helpers/acronyms.aux"
-  "seminar.aux"
-  "seminar.toc"
   "seminar.log"
+  "seminar.toc"
+  "seminar.aux"
+  "helpers/acronyms.aux"
+  "seminar.lof"
+  "seminar.pdf"

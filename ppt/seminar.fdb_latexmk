@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex seminar"] 1468775434 "seminar.aux" "seminar.bbl" "seminar" 1468805034
+["bibtex seminar"] 1468913071 "seminar.aux" "seminar.bbl" "seminar" 1468914497
   "../common/seminar.bib" 1468745661 1287 a6c21a2c32ded32faef7d78991645df0 ""
   "/usr/share/texmf-dist/bibtex/bst/base/abbrv.bst" 1447534200 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "seminar.aux" 1468775435 6328 65a0c9496a51bb86b6d266f79b1aed39 ""
+  "seminar.aux" 1468914496 6761 a7305521eb808954092381bc320f4ca5 ""
   "seminar.bcf" 0 -1 0 ""
   (generated)
-  "seminar.blg"
   "seminar.bbl"
-["pdflatex"] 1468775434 "seminar.tex" "seminar.pdf" "seminar" 1468805034
+  "seminar.blg"
+["pdflatex"] 1468914494 "seminar.tex" "seminar.pdf" "seminar" 1468914497
   "./clients.png" 1468731233 79932 c78e3a95b302c80f248e4e8d6eddf7f0 ""
   "./clients_memory.png" 1468728523 18529 06f24adc8c315258147af0ed03163d2b ""
   "./cluster.png" 1468517047 20418 cf66c4491c2d424ffd3d41c9805f9795 ""
@@ -15,7 +15,7 @@
   "./fetch_phase.png" 1468526767 33913 048a9e20f83f9574bee5f21bbca185bc ""
   "./inside_shard.png" 1468516887 46509 2769454bc797036096d39239216bbb50 ""
   "./query_phase.png" 1468526755 33817 c555eeb643478274802cd2402b836525 ""
-  "./seminar.out" 1468775435 176 db9f33f4525909526c645d5401b5145e ""
+  "./seminar.out" 1468914496 231 7faf939df06c5410a3fdfcd7d9cf5583 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1447534192 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1447534189 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1447534189 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -257,17 +257,17 @@
   "inside_shard.png" 1468516887 46509 2769454bc797036096d39239216bbb50 ""
   "pgfplotsthemetol.sty" 1468482656 3609 07a56d43c8ca008e6be8f6ad1308405d ""
   "query_phase.png" 1468526755 33817 c555eeb643478274802cd2402b836525 ""
-  "seminar.aux" 1468775435 6328 65a0c9496a51bb86b6d266f79b1aed39 ""
-  "seminar.bbl" 1468775434 1156 28fef8ecd8986ecf329ffafae051ed27 "bibtex seminar"
-  "seminar.nav" 1468775435 3506 827a04413729b8b653632db2559367cf ""
-  "seminar.out" 1468775435 176 db9f33f4525909526c645d5401b5145e ""
-  "seminar.tex" 1468775421 4822 dc545269a9ec2150dcf2c128132939ee ""
-  "seminar.toc" 1468775435 222 aa1c2b321559dc28ea90afa1094e7519 ""
+  "seminar.aux" 1468914496 6761 a7305521eb808954092381bc320f4ca5 ""
+  "seminar.bbl" 1468913071 1156 28fef8ecd8986ecf329ffafae051ed27 "bibtex seminar"
+  "seminar.nav" 1468914496 3774 0055a64a9e2cad76a22ced6cbb387e1c ""
+  "seminar.out" 1468914496 231 7faf939df06c5410a3fdfcd7d9cf5583 ""
+  "seminar.tex" 1468913513 5183 713df8b3c124eedf3710cfbabacd2123 ""
+  "seminar.toc" 1468914496 279 90fb784bfaf606004e0f1863860dc475 ""
   (generated)
   "seminar.nav"
-  "seminar.toc"
   "seminar.snm"
-  "seminar.pdf"
   "seminar.log"
-  "seminar.out"
   "seminar.aux"
+  "seminar.out"
+  "seminar.pdf"
+  "seminar.toc"

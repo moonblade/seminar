@@ -56,11 +56,10 @@
 
 \begin{frame}{Sharding}
 	\begin{itemize}
-		\item Distributed document store
 		\item Complete Lucene search engine
-		\item Primary and Replica shards
-		\item Hash functions for shard routing
-		\item Immutability by segments
+		\item Distributed document store
+		% \item Hash functions for shard routing
+		\item Immutability
 		\item Near real timing by In-memory Buffer
 		\item Crash recovery with Translog
 	\end{itemize}
@@ -76,7 +75,8 @@
 \begin{frame}{Clustering}
 	\begin{itemize}
 		\item Node - instance of ES server
-		\item Cluster Health
+		\item Primary and Replica shards
+		% \item Cluster Health
 		\item Failure recovery
 		\item Horizontal scaling
 		\item Cluster master
@@ -98,14 +98,15 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}{Mapping and analysis}
-	\begin{itemize}
-		\item Inverted index
-		\item Dynamic mapping
-		\item Analyzers
-		\item Character filter, tokenizer and token filter
-	\end{itemize}
-\end{frame}
+% \begin{frame}{Mapping and analysis}
+% 	\begin{itemize}
+% 		\item Inverted index
+% 		% \item Dynamic mapping
+% 		\item Tokenizer and token filter
+% 		\item Stemmers
+% 	\end{itemize}
+% \end{frame}
+
 
 \begin{frame}{Aggregations}
 	\begin{itemize}
@@ -125,6 +126,15 @@
 
 
 \section{Search}
+\begin{frame}{Relevance}
+	\begin{itemize}
+		\item Score Calculation
+		\item Term Frequency
+		\item Inverted Document frequency
+		\item Field length norm
+		% \item Boost
+	\end{itemize}
+\end{frame}
 
 \begin{frame}{Distributed search}
 	\begin{itemize}
@@ -149,19 +159,10 @@
 
 
 
-\begin{frame}{Relevance}
-	\begin{itemize}
-		\item Score Calculation
-		\item Term Frequency
-		\item Inverted Document frequency
-		\item Field length norm
-		\item Boost
-	\end{itemize}
-\end{frame}
 
 \begin{frame}{Structured search}
 	\begin{itemize}
-		\item Search Lite
+		% \item Search Lite
 		\item Query DSL
 		\item Query and Filter
 		\item Combinations
@@ -170,26 +171,36 @@
 
 \begin{frame}{Full text search}
 	\begin{itemize}
-		\item Difficulties with normal DB model
-		\item Multi word search
+		% \item Difficulties with normal DB model
+		\item Inverted Index
+		\item Multi word  search
 		\item Multi field search
-		\item Metafield all
+		% \item Metafield all
 		\item Phrase search
 		\item Search as you type, Edge n-grams
 		\item Fuzzy search
 	\end{itemize}
 \end{frame}
 
-
-\section{Conclusion}
-\begin{frame}{Use}
-	\begin{itemize}
-		\item Real time and full text search
-		\item Logging massive data - The Guardian
-		\item Geolocation with full text - Stack overflow
-		\item Sheer scale - Github
-	\end{itemize}
+\begin{frame}{Full text search}
+\begin{figure}[ht]
+	\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Term & Doc1 & Doc2 & Doc3\\
+		\hline
+		\hline
+		Brown & X &  & X \\
+		\hline
+		quick & X & X & X \\
+		\hline
+	\end{tabular} 
+	\caption{An inverted index}
+	\end{center}
+	\end{figure}
 \end{frame}
+
+\section{Performance Analysis}
 
 \begin{frame}{Performance Analysis}
 	\begin{figure}
@@ -203,6 +214,16 @@
 		\centering\includegraphics[width=8cm]{clients_memory}
 		\caption{Memory and Time requirement of different PHP Clients of ES}
 	\end{figure}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Use}
+	\begin{itemize}
+		\item Real time and full text search
+		\item Logging massive data - The Guardian
+		\item Geolocation with full text - Stack overflow
+		\item Sheer scale - Github
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]

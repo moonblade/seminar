@@ -38,7 +38,8 @@
 		\begin{minipage}{0.4\textwidth}
 		\begin{flushright} \large
 		\emph{Guide:} \\
-		Vipin Vasu % Supervisor's Name
+		Vipin Vasu
+		vipin@cet.ac.in % Supervisor's Name
 		\end{flushright}
 		\end{minipage}\\[2cm]
 
@@ -104,7 +105,7 @@
 		\subsection{Sharding}
 			A shard can be explained simply as a piece of an Index. An index can have multiple shards and each shard is a fully qualified Lucene Search Engine. Each shard can function independantly from every other shard. A sharded index increases its distributed nature.
 			\subsubsection{Distributed Document Store}
-				Each document in an index is stored in a single shard. The shard to which the document is mapped can be found by the formula \[ shard = hash(id) \% num\_of\_shards\]. Thus the number of shards in an index is unchangable after creation of the index.
+				Each document in an index is stored in a single shard. The shard to which the document is mapped can be found by the formula \[ shard = hash(id) \% num\_of\_shards\] Thus the number of shards in an index is unchangable after creation of the index.
 
 				At index time, a document is routed to one of the shards, all \ac{api}s use the function to compute which shard the document is stored in and forwards the request to the correct shard.
 			\subsubsection{Primary and Replica Shards}
