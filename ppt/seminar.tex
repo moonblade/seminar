@@ -1,5 +1,6 @@
 \documentclass[10pt]{beamer}
 \usetheme[progressbar=frametitle]{metropolis}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 
@@ -15,7 +16,6 @@
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{cet_emblem}}
 
 \begin{document}
-\nocite{*}
 \maketitle
 
 \begin{frame}{Table of Contents}
@@ -26,7 +26,7 @@
 \section{Introduction}
 \begin{frame}{What is elastic search}
 	\begin{itemize}
-		\item Built on top of Apache Lucene
+		\item Built on top of Apache Lucene \cite{benchmark}
 		\item Built in java, Uses RESTful APIs
 		\item Users - Facebook, Github, Wikipedia
 		\item Ranked first in Search engine Databases
@@ -233,7 +233,7 @@
 \begin{frame}[allowframebreaks]{References}
 
   \bibliography{../common/seminar}
-  \bibliographystyle{abbrv}
+  \bibliographystyle{ieeetr}
 
 \end{frame}
 

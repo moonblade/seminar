@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2016/Arch Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: seminar.aux
 The style file: ieeetr.bst
@@ -6,16 +6,16 @@ Database file #1: ../common/seminar.bib
 Warning--empty year in book
 You've used 8 entries,
             1876 wiz_defined-function locations,
-            506 strings with 4355 characters,
-and the built_in function-call counts, 1013 in all, are:
-= -- 83
+            508 strings with 4407 characters,
+and the built_in function-call counts, 1090 in all, are:
+= -- 104
 > -- 35
 < -- 0
 + -- 16
 - -- 8
 * -- 51
-:= -- 135
-add.period$ -- 9
+:= -- 149
+add.period$ -- 16
 call.type$ -- 8
 change.case$ -- 7
 chr.to.int$ -- 0
@@ -23,17 +23,17 @@ cite$ -- 9
 duplicate$ -- 46
 empty$ -- 143
 format.name$ -- 8
-if$ -- 259
+if$ -- 280
 int.to.chr$ -- 0
 int.to.str$ -- 8
 missing$ -- 4
-newline$ -- 28
+newline$ -- 35
 num.names$ -- 3
-pop$ -- 44
+pop$ -- 52
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 36
+skip$ -- 21
 stack$ -- 0
 substring$ -- 0
 swap$ -- 3
@@ -44,5 +44,5 @@ type$ -- 0
 warning$ -- 1
 while$ -- 3
 width$ -- 9
-write$ -- 56
+write$ -- 70
 (There was 1 warning)

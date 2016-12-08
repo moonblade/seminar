@@ -1,39 +1,7 @@
 \begin{thebibliography}{1}
 
-\bibitem{lucenesite}
-Apache lucene core.
-\newblock https://lucene.apache.org/core/.
-
 \bibitem{benchmark}
-Benchmark of some php clients for elasticsearch.
-\newblock https://github.com/jolicode/elasticsearch-php-benchmark.
-
-\bibitem{dbranking}
-Db-engines ranking - popularity ranking of database management systems.
-\newblock http://www.db-engines.com/en/ranking.
-
-\bibitem{memorybenchmark}
-Elasticsearch php clients test drive.
-\newblock https://jolicode.com/blog/elasticsearch-php-clients-test-drive.
-
-\bibitem{site}
-Elasticsearch: Search and analyze data in real time.
-\newblock https://www.elastic.co/products/elasticsearch.
-
-\bibitem{book}
-C.~Gormley and Z.~Tong.
-\newblock {\em Elasticsearch: The Definitive Guide}.
-\newblock O'Reilly Media.
-
-\bibitem{ijsr}
-P.~Gupta and S.~Nair.
-\newblock Survey paper on elastic search.
-\newblock {\em International Journal of Science and Research (IJSR)}, January
-  2016.
-
-\bibitem{mine}
-O.~Kononenko, O.~Baysal, R.~Holmes, and M.~Godfrey.
-\newblock Mining modern repositories with elasticsearch.
-\newblock {\em University of Waterloo, Waterloo, ON, Canada}, 2014.
+``Benchmark of some php clients for elasticsearch.''
+  https://github.com/jolicode/elasticsearch-php-benchmark.
 
 \end{thebibliography}

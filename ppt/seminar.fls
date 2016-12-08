@@ -418,7 +418,6 @@ INPUT ./clients_memory.png
 INPUT ./clients_memory.png
 INPUT seminar.bbl
 INPUT seminar.bbl
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 OUTPUT seminar.nav
 OUTPUT seminar.toc
 OUTPUT seminar.snm
@@ -430,5 +429,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

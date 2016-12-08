@@ -4,6 +4,7 @@
 O.~Kononenko, O.~Baysal, R.~Holmes, and M.~Godfrey, ``Mining modern
   repositories with elasticsearch,'' {\em University of Waterloo, Waterloo, ON,
   Canada}, 2014.
+\newblock Last accessed : 18-07-2016.
 
 \bibitem{book}
 C.~Gormley and Z.~Tong, {\em Elasticsearch: The Definitive Guide}.
@@ -11,25 +12,31 @@ C.~Gormley and Z.~Tong, {\em Elasticsearch: The Definitive Guide}.
 
 \bibitem{lucenesite}
 ``Apache lucene core.'' https://lucene.apache.org/core/.
+\newblock Last accessed : 18-07-2016.
 
 \bibitem{dbranking}
 ``Db-engines ranking - popularity ranking of database management systems.''
   http://www.db-engines.com/en/ranking.
+\newblock Last accessed : 17-07-2016.
 
 \bibitem{site}
 ``Elasticsearch: Search and analyze data in real time.''
   https://www.elastic.co/products/elasticsearch.
+\newblock Last accessed : 18-07-2016.
 
 \bibitem{ijsr}
 P.~Gupta and S.~Nair, ``Survey paper on elastic search,'' {\em International
   Journal of Science and Research (IJSR)}, January 2016.
+\newblock Last accessed : 18-07-2016.
 
 \bibitem{memorybenchmark}
 ``Elasticsearch php clients test drive.''
   https://jolicode.com/blog/elasticsearch-php-clients-test-drive.
+\newblock Last accessed : 17-07-2016.
 
 \bibitem{benchmark}
 ``Benchmark of some php clients for elasticsearch.''
   https://github.com/jolicode/elasticsearch-php-benchmark.
+\newblock Last accessed : 17-07-2016.
 
 \end{thebibliography}

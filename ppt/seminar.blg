@@ -1,53 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Arch Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: seminar.aux
-The style file: abbrv.bst
+The style file: ieeetr.bst
 Database file #1: ../common/seminar.bib
-Warning--to sort, need author or key in site
-Warning--to sort, need author or key in benchmark
-Warning--to sort, need author or key in memorybenchmark
-Warning--to sort, need author or key in lucenesite
-Warning--to sort, need author or key in dbranking
-Warning--empty year in book
-You've used 8 entries,
-            2118 wiz_defined-function locations,
-            526 strings with 4594 characters,
-and the built_in function-call counts, 1611 in all, are:
-= -- 146
-> -- 54
+You've used 1 entry,
+            1876 wiz_defined-function locations,
+            480 strings with 3592 characters,
+and the built_in function-call counts, 123 in all, are:
+= -- 9
+> -- 1
 < -- 0
-+ -- 24
-- -- 16
-* -- 76
-:= -- 239
-add.period$ -- 19
-call.type$ -- 8
-change.case$ -- 31
++ -- 1
+- -- 0
+* -- 5
+:= -- 20
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 67
-empty$ -- 172
-format.name$ -- 16
-if$ -- 359
+cite$ -- 1
+duplicate$ -- 4
+empty$ -- 19
+format.name$ -- 0
+if$ -- 30
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 4
-newline$ -- 38
-num.names$ -- 6
-pop$ -- 63
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 6
+num.names$ -- 0
+pop$ -- 6
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 0
 quote$ -- 0
-skip$ -- 61
+skip$ -- 6
 stack$ -- 0
-substring$ -- 40
-swap$ -- 8
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
-warning$ -- 6
-while$ -- 6
-width$ -- 9
-write$ -- 66
-(There were 6 warnings)
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 2
+write$ -- 8

@@ -3,6 +3,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage[nodayofweek]{datetime}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{cite}
 \usepackage{acro}
@@ -38,13 +39,13 @@
 		\begin{minipage}{0.4\textwidth}
 		\begin{flushright} \large
 		\emph{Guide:} \\
-		Vipin Vasu
-		vipin@cet.ac.in % Supervisor's Name
+		Vipin Vasu A V \\
+		Sreelal S
 		\end{flushright}
 		\end{minipage}\\[2cm]
 
 		%	DATE SECTION
-		{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+		{\large \formatdate{19}{7}{2016}}\\[1cm] % Date, change the \today to a set date if you want to be precise
 
 		%	LOGO SECTION
 		\vfill % Fill the rest of the page with whitespace
@@ -65,24 +66,24 @@
 	\newpage
 
 	\section{Introduction}
-		Conventional relational databases fail to work for bigdata applications. No\ac{sql} addresses this problem. But again it fails to incorporate full text search on the saved database. Another issue is real-timing, conventional database techniques do not ensure a real time implementation, so a search engine database implementation is required which addresses these issues.\cite{mine}
+		Conventional relational databases fail to work for bigdata applications. No\ac{sql} addresses this problem. But again it fails to incorporate full text search on the saved database. Another issue is real-timing, conventional database techniques do not ensure a real time implementation, so a search engine database implementation is required which addresses these issues \cite{mine}.
 
-		Elastic Search is an open-source realtime distributed search and analytics engine built as an abstraction layer on top of Apache Lucene \textsuperscript{\ac{tm}}\cite{book}. Lucene is an advanced full text search engine with high performance\cite{lucenesite}. But since Lucene is written as a library, it is available only when working with Java and it is very complex to use.
+		Elastic Search is an open-source realtime distributed search and analytics engine built as an abstraction layer on top of Apache Lucene \cite{book}. Lucene is an advanced full text search engine with high performance\cite{lucenesite}. But since Lucene is written as a library, it is available only when working with Java and it is very complex to use.
 
-		Elastic provides an abstraction layer implemented in Java, which uses Lucene internally for its operations, but provides a simple method to access them via \ac{rest}ful \ac{api}'s. Since access to operations is via \ac{rest}ful \ac{api}'s, the usage of Elastic Search does not require coding in java, \emph{ie} it can be used from any language.
+		Elastic provides an abstraction layer implemented in Java, which uses Lucene internally for its operations, but provides a simple method to access them via \ac{rest}ful \ac{api}'s. Since access to operations is via \ac{rest}ful \ac{api}'s, the usage of Elastic Search does not require coding in java, ie it can be used from any language.
 
-		Elastic search is widely used by giants on the web. Facebook, Wikipedia, and Github being examples. It was ranked as the most popular search engine database, outranking competitors like Solr and Sphinx.\cite{dbranking}
+		Elastic search is widely used by giants on the web. Facebook, Wikipedia, and Github being examples. It was ranked as the most popular search engine database, outranking competitors like Solr and Sphinx \cite{dbranking}.
 
 	\section{History}
-		Shay Banon, started working with Lucene, and finding its interface tricky started building an abstraction layer over it. It was released as an open-source library for Java called Compass.\cite{site}
+		Shay Banon, started working with Lucene, and finding its interface tricky, started building an abstraction layer over it. It was released as an open-source library for Java called Compass \cite{site}.
 
-		Later, working in high performance distributed environments revealed the need for distributed solution to search. So Compass libraries were rewritten from scratch with distributed usage in mind. Making it available to different languages was easy as \ac{json} became an accepted standard of representing complex objects serially and \ac{rest}ful \ac{api}'s the standard interface to access functionality via \ac{http} connections, thus its implementaion, serialisation and deserialisation, being available in all languages
+		Later, working in high performance distributed environments revealed the need for distributed solution to search. So Compass libraries were rewritten from scratch with distributed usage in mind. Making it available to different languages was easy as \ac{json} became an accepted standard of representing complex objects serially and \ac{rest}ful \ac{api}'s the standard interface to access functionality via \ac{http} connections, thus its implementaion, serialisation and deserialisation, being available in all languages.
 	
 	\section{Features}
-		Elastic Search provides myriads of features on top of abstraction of and simple interface to Lucene. Some of the features, excluding search are explored here
+		Elastic Search provides myriads of features on top of abstraction and simple interface to Lucene. Some of the features, excluding search are explored here
 
 		\subsection{Document Oriented}
-			Elastic search is document oriented. Instead of trying to create columns where the data can fit, the data is stored as a \ac{json} object. Not only that, but each field is indexed for searchability. \emph{ie} instead of searching on rows, searching is done on documents.\cite{book}
+			Elastic search is document oriented. Instead of trying to create columns where the data can fit, the data is stored as a \ac{json} object. Not only that, but each field is indexed for searchability. ie instead of searching on rows, searching is done on documents \cite{book}[2].
 
 			\ac{json} is a format of representing complex objects serially. It is the standard format accepted by almost all languages and conversion to and from \ac{json} can be done easily. Representing a document as \ac{json} instead of a native object makes it serial, thus having the added benefit of being a viable parameter in a \ac{http} request, or a \ac{rest}ful \ac{api}.
 
@@ -95,7 +96,7 @@
 			Each type has its own mapping or schema definition which defines how the fields of the documents of that type must be indexed. For example, a date field would be indexed to allow a range filter to be used on it, while a string field would be indexed for full search capability.
 
 			\subsubsection{Id}
-			Each document is indexed with an identification field id. Analogous to a row in relational databases, id can be used to get a document from the database, provided you have the index and the type in which it is stored. 
+			Each document is indexed with an identification field, id. Analogous to a row in relational databases, id can be used to get a document from the database, provided you have the index and the type in which it is stored. 
 
 			Id also helps in routing, or determining which shard the document will be stored in, the details of which are provided in the next section
 
@@ -112,7 +113,7 @@
 				There are two kinds of shards, Primary and Replica. The number of primary shards is fixed at index time, but the number of replica shards can be changed. Primary shards contain indexes of the documents provided. Replica shards are exact copies of primary shards. They are useful for failure mitigation in a clustered environment.
 
 			\subsubsection{Shard working}
-				A shard has to index documents in such a way that all fields are searchable \emph{ie} it has to cope with multiple values per field. This is solved by using an inverted index. An \emph{inverted index} can be defined as a mapping from all unique terms in the document to the documents they appear in.
+				A shard has to index documents in such a way that all fields are searchable ie it has to cope with multiple values per field. This is solved by using an inverted index. An \emph{inverted index} can be defined as a mapping from all unique terms in the document to the documents they appear in.
 				\begin{figure}[ht]
 				\begin{center}
 				\begin{tabular}{|c|c|c|c|}
@@ -125,7 +126,7 @@
 					quick & X & X & X \\
 					\hline
 				\end{tabular} 
-				\caption{An inverted index}
+				\caption{An inverted index.}
 				\end{center}
 				\end{figure}
 				Inverted index can be used to efficiently search through a large document set to find words matching the query term.
@@ -134,10 +135,10 @@
 
 				\begin{figure}[ht]
 					\centering\includegraphics[width=10cm]{images/inside_shard}
-					\caption{Inside a shard}
+					\caption{Inside a shard.}
 				\end{figure}
 
-				The problem with immutable index is that its immutable, So new indexes can't be saved. This is solved by using multiple indices, namely segments. So a shard can be viewed as a number of segments.A commit point file, tracks all the segments available in the shard. Adding a new document should not be as hard as reindexing an entire segment, so newer indexes are saved in an In-memory buffer, and the In-memory buffer is made searchable as well, when the buffer fills, a new segment is created with the data in the buffer and the buffer is cleared. Old segments may be combined to create larger segments during this time. This operation is known as a refresh and by default Elastic does it every second. Segments and In-memory buffer are used together to get the best worlds.
+				The problem with immutable index is that its immutable, so new indexes can't be saved. This is solved by using multiple indices, namely segments. A shard can be viewed as a number of segments.A commit point file, tracks all the segments available in the shard. Adding a new document should not be as hard as reindexing an entire segment, so newer indexes are saved in an In-memory buffer, and the In-memory buffer is made searchable as well, when the buffer fills, a new segment is created with the data in the buffer and the buffer is cleared. Old segments may be combined to create larger segments during this time. This operation is known as a refresh and by default Elastic does it every second. Segments and In-memory buffer are used together to get the best worlds.
 
 				The solution above does not protect In-memory buffer against a power failure, to cope with it, a translog is kept in the disk which is updated for each operation on the In-memory buffer. If a shard fails, on restart, the operations in the translog are done to reinstate the In-memory buffer. In contrast to refresh, a flush operation writes the segments to disk and ensures that the segments are written before proceeding or does an fsync operation. Flush clears the translog, since the data is available in disk. By default Elastic flushes every thirty minutes.
 
@@ -145,7 +146,7 @@
 			Elastic Search is built to work in a distributed environment, distribution is achieved to some extent using shards, but the real power of elastic comes from clusters. A cluster is a group of nodes working together. Tasks are delegated between the nodes and node acceptance and failure recovery are done automatically. Clustering is done autonomously by Elastic Search with little involvement from the user. Adding new nodes to the cluster, removing nodes, or resharing of shards on node failure are all possible with clustering.
 
 			\subsubsection{Node}
-				A node is an instance of an Elastic Search server, capable of handling requests. A node may contain primary and replica shards.A primary shard and its replica are never kept in the same node as a node failure would elimate both. Users can communicate with any node in the cluster. All nodes know the location of each document and can forward the request to the correct node.\cite{ijsr}
+				A node is an instance of an Elastic Search server, capable of handling requests. A node may contain primary and replica shards.A primary shard and its replica are never kept in the same node as a node failure would elimate both. Users can communicate with any node in the cluster. All nodes know the location of each document and can forward the request to the correct node \cite{ijsr}.
 
 			\subsubsection{Cluster Health}
 				Cluster health is a measure of safety a cluster has from failure, it is represented as one of three colors, red, yellow or green. Cluster health is calculated in terms of the activeness of primary and replica shards.
@@ -157,16 +158,16 @@
 				\end{itemize}
 
 			\subsubsection{Horizontal Scaling}
-				One of the main motivations of clustering is to increase the througput or decreasing request serve time. Scaling can be done for achieving it. Normally scaling is done vertically by increasing the resources available to program. But horizontal scaling always caps out due to availability of resources and the cost of horizontal scaling will be exponential.
+				One of the main motivations of clustering is to increase the througput or decreasing request serve time. Scaling can be done for achieving it. Normally scaling is done vertically by increasing the resources available to program. But vertical scaling always caps out due to unavailability of resources and the cost of vertical scaling increases exponentially.
 
 				Another approach that becomes possible with clustering is horizontal scaling. In horizontal scaling, instead of increasing performance in the node, a new node is added. Horizontal scaling has the advantage of being easy, starting another node is the only work involved. Also cost of horizontal scaling increases linearly, so much lower costs can be achieved
 
 			\subsubsection{Failure Recovery}
-				The intention behind clustering is to recover in case of a failure without data loss. In a cluster with many nodes, the primary and replica shards are shared between the nodes, with no primary or its replica shard in the same node. When a node dies, and a primary shard is gone, then a replica shard gets promoted to master and the database functions normally.
+				The intention behind clustering is to recover in case of a failure without data loss. In a cluster with many nodes, the primary and replica shards are shared between the nodes, with no primary or its replica shard in the same node. When a node dies, and a primary shard is gone, then a replica shard gets promoted to primary and the database functions normally.
 
 				\begin{figure}[ht]
 					\centering\includegraphics[width=10cm]{images/cluster}
-					\caption{A sample cluster}
+					\caption{A sample cluster.}
 				\end{figure}
 
 			\subsubsection{Master Node}
@@ -175,23 +176,23 @@
 				Indexing requests arrive at the master node and it forwards the request to the node which has the primary shard to which the document maps to. The node updates its primary shard and then gives a request to all replica shards to update their content as well. In contrast a get query can be serviced by any node.
 				\begin{figure}[ht]
 					\centering\includegraphics[width=10cm]{images/cluster_data}
-					\caption{Request routing in a cluster}
+					\caption{Request routing in a cluster.}
 				\end{figure}
 
 			\subsubsection{Autonomy}
-				Clusters are completely autonomous, user involvement limits to starting of the node. When a node is started, it automatically identifies any available cluster it can join to and the master in the cluster adds it. If no cluster is found, the node becomes a master and becomes part of a single node cluster. All this happens without the interation of the user. As far as the user is concered, there is no difference between a single node cluster and a multi node cluster save for a decrease in time taken for the request
+				Clusters are completely autonomous, user involvement limits to starting of the node. When a node is started, it automatically identifies any available cluster it can join to and the master in the cluster adds it. If no cluster is found, the node becomes a master and becomes part of a single node cluster. All this happens without interation from the user. As far as the user is concered, there is no difference between a single node cluster and a multi node cluster save for a decrease in time taken for the request.
 
 		\subsection{Mapping and Analysis}
-			Elastic provides powerful methods to customize how the inverted index is to be built. They are collectively known as analyzers
+			Elastic provides powerful methods to customize how the inverted index is to be built. They are collectively known as analyzers.
 
 			\subsubsection{Analyzers}
 				Analyzers are used to determine the words to index, and the ones to discard and the form of the words to index. Stemmers can be used on the words. They can be split on non whitespace regions, and common words can be ignored. These operations are done by an analyzer. By default Elastic uses the standard analyzer, which splits tokens on whitespaces and punctuations, does no stemming and no words are ignored. It can be changed to process languages by using language specific analyzers. Analyzers are a combination of character filter, tokenizer, token filter, and stemmer.
 
 			\subsubsection{Character Filter}
-				A character filter filters characters in a field. For example, we could choose to replace all instances of `\&' with and. We might want to make a string consistently encoded, and would use character substitions for the same. Example, ``' and `'' are two types of single quotes which may be replaced by a single type. They are done to increase search effiency by increasing the number of documents matching.
+				A character filter filters characters in a field. For example, we could choose to replace all instances of `\&' with and. We might want to make a string consistently encoded, and would use character substitions for the same. Example, ``' and `'' are two types of single quotes which may be replaced by a single type. They are done to increase search efficiency by increasing the number of documents matched.
 
 			\subsubsection{Tokenizer}
-				Tokenizer decides where each token begins and ends and splits a string into tokens. The default tokenizer splits on whitsespaces and punctuations. This can be altered to suit the need. Tokenizers decide the number of tokens formed from a string.
+				Tokenizer decides where each token begins and ends and splits a string into tokens. The default tokenizer splits on whitsespaces and punctuations. This can be altered to suit our need. Tokenizers decide the number of tokens formed from a string.
 
 			\subsubsection{Token Filter}
 				Token filters are used to eliminate words that are common. They decide on which tokens to index, and which tokens to eliminate. For example, words like `the', `an' etc could be eliminated from the index, making search faster and more relevant. 
@@ -200,7 +201,7 @@
 				Similar to the GROUP BY commands in \ac{sql}, Aggregation commands are used to provide data over a set of values. This is useful in analysis of data, and for other simpler uses as well. Aggregations are done using buckets and metrics which have a composable syntax and can be combined to create complex queries.
 
 			\subsubsection{Buckets}
-				Bucket is a collection of documents that meet a certain criterion.\cite{book} They partition documents based on criteria, it can be thought of as the group by column in relational database. As aggregation proceeds, the values in a document are checked to see if they should be added to the bucket.
+				Bucket is a collection of documents that meet a certain criterion \cite{book}. They partition documents based on criteria, it can be thought of as the group by column in relational database. As aggregation proceeds, the values in a document are checked to see if they should be added to the bucket.
 
 			\subsubsection{Metrics}
 				Buckets are a means to an end, buckets are usually found to do some calculations on the grouped documents, and these calculations are called metrics. Count, max and min are examples of metrics.
@@ -209,7 +210,7 @@
 				Buckets and metrices can be combined in any way and can even be nested since the composable syntax allows the query to be assembled in various ways. This can then be used in conjunction with queries or filters written in query \ac{dsl}. This allows us to run a query or a filter and run aggregations on the result returned by the query.
 
 		\subsection{Concurrency}
-			Elastic Search aims to be distributed. In a distributed system concurrency plays an important role in determining speed with which queries are processed.A good implementation of a distributed system will be as concurrent as possible. 
+			Elastic Search aims to be distributed. In a distributed system concurrency plays an important role in determining speed with which queries are processed. A good implementation of a distributed system will be as concurrent as possible. 
 
 			\subsubsection{Optimistic Concurrency Control}
 				Elastic handles concurrency using \emph{optimistic concurrency control}. It assumes that conflicts are unlikely to happen during indexing operations and does not block operations\cite{book}. But if the document changes between reading and writing the update fails and it is upto the application to decide how to handle a failure. 
@@ -234,23 +235,23 @@
 			builds a priority queue of matching documents. All the returned queues are analyzed and single priority queue of required size is created.
 				\begin{figure}[ht]
 					\centering\includegraphics[width=10cm]{images/query_phase}
-					\caption{Query phase in distributed search}
+					\caption{Query phase in distributed search.}
 				\end{figure}
 
 			\subsubsection{Fetch Phase}
 			The query phase identifies which documents satisfy the search request, but the documents aren't retrieved. It is done in fetch phase. Using a multiget request, matching documents are retrieved and an enriched version of the priority queue is formed which is then sent back to the user.
 				\begin{figure}[ht]
 					\centering\includegraphics[width=10cm]{images/fetch_phase}
-					\caption{Fetch phase in distributed search}
+					\caption{Fetch phase in distributed search.}
 				\end{figure}
 
 		\subsection{Relevance Score}
 			Databases that deal purely in structured data have it easy. they just have to check whether a document matches the query. While Boolean yes/no matches are an essential part of full-text search, they are not enough by themselves. Instead, the relevance of each document to the query is to be found as well. Full-text search engines have to not only find the matching documents, but also sort them by relevance.
 
-			For a query, All matching documents are found, their relevance is found and then they are sorted by it. For this end, there should be a relevance score field for each retrieved document and this is stored in the metadata \_score field. Relevance is affected by the following factors
+			For a query, All matching documents are found, their relevance is found and then they are sorted by it. For this end, there should be a relevance score field for each retrieved document and this is stored in the metadata \_score field. Relevance is affected by the following factors.
 
 			\subsubsection{Term Frequency}
-				More the term appears in a document, more relevant the term is. For example, A document talking about foxes, would have the term fox repeated throughout. Documents with more term frequency will have a higher relevance score
+				More the term appears in a document, more relevant the term is. For example, A document talking about foxes, would have the term fox repeated throughout. Documents with more term frequency will have a higher relevance score.
 
 			\subsubsection{Inverse Document Frequency}
 				While term frequency was limited to a single document, inverse document frequency goes beyond and analyses all documents in an index. Terms that are common not only in a single document but also in other documents in the index would rarely be relevant. Terms like `the' and `and' would match this criteria. Hence those terms are given less priority and count less in score calculation. While documents with words that are uncommon across the index are given higher scores.
@@ -259,16 +260,16 @@
 				It can be stated simply as, The shorter the field, the more important it is. A title field would be shorter than a body field, so a query matching a title field is given higher score than a query matching the body field. 
 
 			\subsubsection{Boost}
-				Druing search or index, individual fields can be boosted to count more towards relevance score. An example would be a tag field. Boosting a tag field ensures that a document is matched when any of tags match. 
+				During search or index, individual fields can be boosted to count more towards relevance score. An example would be a tag field. Boosting a tag field ensures that a document is matched when any of its tags are matched. 
 
 		\subsection{Structured Search}
 			In Elastic, search queries can be given in two different ways. One is a search lite syntax directly compatible with Lucene. This can be viewed as an inline approach to queries where queries are transformed into a single string. Another approach is to use a query \ac{dsl} which in itself is a full fledged language.
 
 			\subsubsection{Search Lite}
-				Search lite is a lightweight search method which is easy to use. It has less power and customizability but it can be used efficiently for simple searches. Search queries are conerted into a single query string. An example of a search lite query is \(``q:title=my title"\)
+				Search lite is a lightweight search method which is easy to use. It has less power and customizability but it can be used efficiently for simple searches. Search queries are conerted into a single query string. An example of a search lite query is \(``q:title=my title"\).
 
 			\subsubsection{Query \ac{dsl}}
-				Search lite can only be used for adhoc searches. It soon becomes too powerless to handle complex queries. Elastic provides a much more complex, flexible query language called \emph{query \ac{dsl}}. Query \ac{dsl} has a composable syntax, \emph{ie} smaller query elements can be combined to create complex queries. A bool filter for example can be used to combine two queries using or, and or not and so on. Combinations and nesting of query components allows for very complex queries to be made easily and comprehensively.
+				Search lite can only be used for adhoc searches. It soon becomes too powerless to handle complex queries. Elastic provides a much more complex, flexible query language called \emph{query \ac{dsl}}. Query \ac{dsl} has a composable syntax, ie smaller query elements can be combined to create complex queries. A bool filter for example can be used to combine two queries using or, and or not and so on. Combinations and nesting of query components allows for very complex queries to be made easily and comprehensively.
 
 				All search works on the basic principle of getting all documents that are related to the query and then trimming the long tail of irrelevant documents. Some of the common query elements are explored.
 
@@ -304,12 +305,11 @@
 		\subsection{Uses}
 			Elasticsearch finds uses in a wide range of applications, from giant corporations to startups use its features to provide real time applications.
 
-			Some use cases would include
 			\subsubsection{Real time and full text search}
 				Easily done using the features mentioned above. Real time full text search is one of the most prominent features of elastic search that finds its way into applications.
 
 			\subsubsection{Logging massive data}
-				It can be customized of use as a logging server easily with the use of plugins like marvel and such. The Guardian uses Elasticsearch to combine visitor logs with social -network data to provide real-time feedback to its editors about the public’s response to new articles.
+				It can be customized of use as a logging server easily with the use of plugins like marvel. The Guardian uses Elasticsearch to combine visitor logs with social network data to provide real time feedback to its editors about the public’s response to new articles.
 
 			\subsubsection{Geolocation with full text search}
 				Stack Overflow combines full-text search with geolocation queries and uses more-like-this to find related questions and answers.
@@ -323,14 +323,14 @@
 
 			\begin{figure}[ht]
 				\centering\includegraphics[width=10cm]{images/clients}
-				\caption{Performance analysis of different PHP Clients of ES}
+				\caption{Performance analysis of different PHP Clients of ES.}
 			\end{figure}
 
 			Elastic refers to the official elastic client. NerveTattoo was the first implementation of an elastic \ac{php} client. Sherlock came next, its alpha version was released, but since Elastica was released before it could go stable, development was stopped and sherlock got stuck in alpha phase. Elastica is the accepted or the most popular Elastic client for \ac{php} today\cite{memorybenchmark}. A comparison between these clients are given. In terms of time taken to serve requests\cite{benchmark} and memory requirements.
 
 			\begin{figure}[ht]
 				\centering\includegraphics[width=10cm]{images/clients_memory}
-				\caption{Memory and Time requirement of different PHP Clients of ES}
+				\caption{Memory and Time requirement of different PHP Clients of ES.}
 			\end{figure}
 
 	% \nocite{*}
